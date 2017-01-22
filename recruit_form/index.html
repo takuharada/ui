@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja" class="no-js">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="style.css" />
+
+
+
+
+</head>
+
+<body">
+
+<div class="container positions">
+  <h2>募集要項</h2>
+  <ul>
+    <li class="pos-card" id="pos_1">
+      <div class="content">
+        <div class="title new">全県統一模試運営</div>
+        <div class="dept">業務内容</div>
+        <div class="date">　２名</div>
+        <div class="refer">応募する</div>
+      </div>
+      <ul class="desc">
+        <li>全県統一模試が行われる会場の設営、試験監督官</li>
+        <li>全県統一模試申込受付、excel処理作業、電話受付</li>
+        <li>成績表配送、梱包作業</li>
+      </ul>
+    </li>
+    <li class="pos-card" id="pos_2">
+      <div class="content">
+        <div class="title new">営業職</div>
+        <div class="dept">業務内容</div>
+        <div class="date">３名</div>
+        <div class="refer">応募する</div>
+      </div>
+      <ul class="desc"> 
+        <li>学校向け学習教材の普及</li>
+        <li>学校向け印刷物の営業活動</li>
+        <li>全県統一模試が行われる会場の設営、試験監督官</li>
+      </ul>
+    </li>
+    <li class="pos-card" id="pos_3">
+      <div class="content">
+        <div class="title new">編集制作職</div>
+        <div class="dept">業務内容 </div>
+        <div class="date">２名</div>
+        <div class="refer">応募する</div>
+      </div>
+      <ul class="desc">
+        <li>全県統一模試の設題、テスト編集作業</li>
+        <li>学校向け学習教材の編集作業</li>
+        <li>全県統一模試が行われる会場の設営、試験監督官</li>
+      </ul>
+    </li>
+  </ul>
+</div>
+<div class="return">前の画面に戻る   </div>
+<div class="container refer-card">
+  <div class="modal confirmed"><span class="close-modal"></span>
+    <h2>ご応募ありがとうございます。</h2>
+    <p><span id="refer_name" class="focus"></span> さん、 <span id="refer_pos" class="focus"></span> 職へのご応募ありがとうございました。弊社人事担当からお返事させていただきます。</p>
+  </div>
+  <div class="sign-up card">
+    <div class="card__header"> 
+      <h1>応募要項フォーム</h1>
+      <div class="description">必要事項に記入の上、確認のち送信してください。</div>
+    </div>
+    <div class="card__content">
+      <form class="referral" method="post">
+        <div class="field line">
+          <input class="req" maxlength="240" type="text" name="name" value="" required="required" id="name"/>
+          <label class="placeholder" for="name">氏名</label>
+        </div>
+        <div class="field line">
+          <input class="req" maxlength="240" type="email" name="email" value="" required="required" id="email"/>
+          <label class="placeholder" for="email">Email</label>
+        </div>
+        <div class="field line inline">
+          <input class="req" maxlength="240" type="text" name="position" value="" required="required" id="position"/>
+          <label class="placeholder" for="position">応募項目</label>
+        </div>
+        <div class="field inline right"><span class="dropdown-wrapper">
+            <select class="empty" name="department" id="choice">
+              <option value="" selected="selected">履歴書送付</option>
+              <option value="1">面談希望</option>
+              <option value="2">問い合わせ</option>
+            </select></span></div>
+        <div>
+          <input type="submit" value="　確認画面へ" disabled="disabled" id="btn"/>
+        </div><a class="reset" href="#">リセット </a>
+      </form>
+    </div>
+  </div>
+</div>
+	
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script src="js/main.js"></script>
+	
+
+
+</body>
+
+</html>
